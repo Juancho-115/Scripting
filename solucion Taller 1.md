@@ -461,8 +461,14 @@ string AgregarPuntoFinal(string cadena)
 
 string resultado = AgregarPuntoFinal("Hola mundo");
 ```
-16. funcion que haga un barrel roll
+16. funcion que cuente un numero de palabras total
 ```C#
+int ContarPalabras(string texto)
+{
+    return texto.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries).Length;
+}
+
+int resultado = ContarPalabras("Hola mundo esto es una prueba");
 
 ```
 
